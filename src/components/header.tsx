@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 import { useLoading } from '../context/loadingcontext';
 
@@ -131,13 +131,13 @@ const Header = () => {
                     </div>
                     <div className="p-5">
                         <ul className="space-y-4">
-                            {/* <li><Link to="/dashboard" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Dashboard</Link></li>
+                            <li><Link to="/dashboard" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Dashboard</Link></li>
                             <li><Link to="/home" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Edit Users</Link></li>
                             <li><Link to="/users" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">User List</Link></li>
                             <li><Link to="#" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Profile</Link></li>
                             <li><a href="#" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2" onClick={toggleModal}>Change Password</a></li>
-                            <li><Link to="/" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Logout</Link></li> */}
-                            <li>
+                            <li><Link to="/" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Logout</Link></li>
+                            {/* <li>
                                 <button
                                     onClick={() => navigateWithDelay('/dashboard')}
                                     className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
@@ -183,7 +183,7 @@ const Header = () => {
                                 >
                                     Logout
                                 </button>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div> 
