@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 import { useLoading } from '../context/loadingcontext';
 
@@ -131,12 +131,59 @@ const Header = () => {
                     </div>
                     <div className="p-5">
                         <ul className="space-y-4">
-                            <li><Link to="/dashboard" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Dashboard</Link></li>
+                            {/* <li><Link to="/dashboard" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Dashboard</Link></li>
                             <li><Link to="/home" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Edit Users</Link></li>
                             <li><Link to="/users" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">User List</Link></li>
                             <li><Link to="#" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Profile</Link></li>
                             <li><a href="#" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2" onClick={toggleModal}>Change Password</a></li>
-                            <li><Link to="/" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Logout</Link></li>
+                            <li><Link to="/" className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2">Logout</Link></li> */}
+                            <li>
+                                <button
+                                    onClick={() => navigateWithDelay('/dashboard')}
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Dashboard
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => navigateWithDelay('/home')}
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Edit Users
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => navigateWithDelay('/users')} 
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Users List
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Profile
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={toggleModal}
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Change Password
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    onClick={() => navigateWithDelay('/')}
+                                    className="text-lg text-gray-700 hover:bg-blue-700 hover:text-white block p-2"
+                                >
+                                    Logout
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div> 
