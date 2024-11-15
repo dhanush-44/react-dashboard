@@ -93,7 +93,7 @@ const Header = () => {
                 </div>
 
                 <div className="hidden lg:inline relative ml-auto">
-                    <button onClick={toggleMenu} className="text-4xl text-blue-700 hover:text-gray-700 mt-0 lg:mt-0">
+                    <button className="text-4xl text-blue-700 hover:text-gray-700 mt-0 lg:mt-0" onClick={toggleMenu}>
                         <FaUserCircle />
                     </button>
                     {isMenuOpen && (
