@@ -44,8 +44,6 @@ export const TableProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     const rowWithId: TableRow = { ...newRow, id: newId };
     setTableData((prev) => [...prev, rowWithId]);
   };
-  
-  
 
   return (
     <TableContext.Provider value={{ tableData, deleteRow, editRow, addRow }}>
