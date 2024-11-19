@@ -250,7 +250,7 @@ const Home = () => {
         )}
       </main>
       <Footer />
-      <Toaster position="top-right" />
+      <Toaster />
     </div>
   );
 };
